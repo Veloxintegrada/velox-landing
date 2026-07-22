@@ -13,10 +13,10 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:#1a1a2e;-webkit-f
 .hero{min-height:100vh;background:linear-gradient(150deg,#000c20 0%,#001f5c 40%,#003a9e 70%,#0057B8 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 24px 70px;position:relative;overflow:hidden;}
 .hero-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 55% at 50% -5%,rgba(0,150,255,.28) 0%,transparent 65%),radial-gradient(ellipse 40% 30% at 90% 80%,rgba(192,57,43,.12) 0%,transparent 60%),radial-gradient(ellipse 35% 25% at 10% 85%,rgba(0,170,255,.1) 0%,transparent 60%);}
 .hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:36px 36px;}
-.hero-topbar{display:flex;align-items:center;gap:24px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:60px;padding:12px 32px;backdrop-filter:blur(14px);margin-bottom:52px;z-index:2;flex-wrap:wrap;justify-content:center;}
-.logo_velox_img{height:44px;width:auto;filter:brightness(0) invert(1);object-fit:contain;}
-.topbar-sep{width:1px;height:40px;background:rgba(255,255,255,.2);}
-.logo_n2p_img{height:38px;width:auto;filter:brightness(0) invert(1);object-fit:contain;}
+.hero-topbar{display:flex;align-items:center;gap:24px;background:rgba(255,255,255,.95);border:1px solid rgba(255,255,255,.3);border-radius:60px;padding:12px 32px;backdrop-filter:blur(14px);margin-bottom:52px;z-index:2;flex-wrap:wrap;justify-content:center;}
+.logo_velox_img{height:44px;width:auto;object-fit:contain;}
+.topbar-sep{width:1px;height:40px;background:rgba(0,0,0,.15);}
+.logo_n2p_img{height:38px;width:auto;object-fit:contain;}
 .hero-chip{background:rgba(0,170,255,.14);border:1px solid rgba(0,170,255,.4);color:#7dd8ff;font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:7px 22px;border-radius:30px;margin-bottom:28px;z-index:2;}
 .hero h1{font-size:clamp(2rem,5.5vw,4rem);font-weight:900;color:#fff;line-height:1.12;max-width:860px;margin-bottom:22px;z-index:2;letter-spacing:-.5px;}
 .hero h1 em{font-style:normal;color:#00AAFF;}
@@ -72,10 +72,10 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:#1a1a2e;-webkit-f
 .cta-inner p{font-size:1rem;color:rgba(255,255,255,.72);margin-bottom:38px;line-height:1.7;}
 .cta-btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;}
 footer{background:#000c20;padding:40px 24px;text-align:center;}
-.footer-logos{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;margin-bottom:24px;}
-.footer-logo-velox{height:40px;width:auto;filter:brightness(0) invert(1);opacity:.9;}
-.footer-sep{width:1px;height:36px;background:rgba(255,255,255,.2);}
-.footer-logo-n2p{height:32px;width:auto;filter:brightness(0) invert(1);opacity:.7;}
+.footer-logos{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;margin-bottom:24px;background:rgba(255,255,255,.95);border-radius:16px;padding:20px 40px;max-width:400px;margin-left:auto;margin-right:auto;margin-bottom:24px;}
+.footer-logo-velox{height:40px;width:auto;}
+.footer-sep{width:1px;height:36px;background:rgba(0,0,0,.15);}
+.footer-logo-n2p{height:32px;width:auto;}
 .footer-info{font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.8;}
 @media(max-width:680px){
   .hero-topbar{gap:16px;padding:10px 20px;}
