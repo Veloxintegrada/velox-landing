@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>velox sistemas — pabx em nuvem</title>
+<title>velox sistemas – pabx em nuvem</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 :root{--azul:#0057B8;--azul-esc:#002a6e;--azul-neon:#00AAFF;--verm:#C0392B;--cinza-esc:#3a3a3a;--laranja:#FF6B00;--bg:#f0f4fa;}
@@ -28,177 +28,172 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:#1a1a2e;-webkit-f
 .btn-wa:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(37,211,102,.55);}
 .btn-email{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:600;font-size:.95rem;padding:15px 34px;border-radius:50px;text-decoration:none;backdrop-filter:blur(10px);transition:background .2s;}
 .btn-email:hover{background:rgba(255,255,255,.15);}
-.stats{background:linear-gradient(90deg,var(--azul-esc),var(--azul),#0080d4);padding:0;overflow:hidden;}
+.stats{background:linear-gradient(90deg,var(--azul-esc),var(--azul),#0080d4);padding:0 24px;overflow:hidden;}
 .stats-inner{display:flex;align-items:stretch;max-width:1100px;margin:0 auto;flex-wrap:wrap;}
-.stat{flex:1;min-width:200px;padding:38px 28px;text-align:center;position:relative;}
+.stat{flex:1;min-width:200px;padding:38px 24px;text-align:center;position:relative;}
 .stat:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:rgba(255,255,255,.2);}
 .stat-num{font-size:3.2rem;font-weight:900;color:#fff;line-height:1;margin-bottom:7px;}
 .stat-num span{color:#FFD700;}
 .stat-label{font-size:.84rem;color:rgba(255,255,255,.72);line-height:1.5;}
-.zero{background:#040d1e;padding:96px 24px;text-align:center;position:relative;overflow:hidden;}
-.zero::before{content:'';position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(0,170,255,.1) 0%,transparent 60%);top:-200px;left:50%;transform:translateX(-50%);border-radius:50%;pointer-events:none;}
-.sec-label{font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;display:block;margin-bottom:12px;}
-.zero .sec-label{color:#7dd8ff;}
-.sec-title{font-size:clamp(1.5rem,3.5vw,2.4rem);font-weight:900;max-width:680px;margin:0 auto 14px;line-height:1.25;}
-.zero .sec-title{color:#fff;}
-.zero .sec-title em{font-style:normal;color:#00AAFF;}
-.sec-sub{font-size:1rem;max-width:560px;margin:0 auto 52px;line-height:1.75;}
-.zero .sec-sub{color:rgba(255,255,255,.6);}
-.zero-pill{display:inline-block;background:linear-gradient(90deg,#00c96e,#00AAFF);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;padding:9px 28px;border-radius:40px;margin-bottom:40px;box-shadow:0 6px 24px rgba(0,170,255,.3);}
-.zero-cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;max-width:940px;margin:0 auto;}
-.zero-card{flex:1;min-width:240px;max-width:290px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:32px 26px;text-align:left;backdrop-filter:blur(12px);transition:background .2s,transform .2s;}
-.zero-card:hover{background:rgba(255,255,255,.09);transform:translateY(-4px);}
-.z-icon{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px;}
-.z-icon.a1{background:rgba(0,170,255,.15);}
-.z-icon.a2{background:rgba(0,201,110,.15);}
-.z-icon.a3{background:rgba(255,107,0,.15);}
-.zero-card h3{font-size:1rem;font-weight:700;margin-bottom:10px;}
-.zero-card.c1 h3{color:#00AAFF;}
-.zero-card.c2 h3{color:#00e080;}
-.zero-card.c3 h3{color:#FF9A3C;}
-.zero-card p{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.65;}
-.benefits{background:var(--bg);padding:90px 24px;text-align:center;}
-.benefits .sec-label{color:var(--azul);}
-.benefits .sec-title{color:#0a0a2e;}
-.benefits .sec-sub{color:#666;}
-.bene-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;max-width:1040px;margin:0 auto;}
-.b-card{background:#fff;border-radius:20px;padding:28px 22px;text-align:left;box-shadow:0 4px 22px rgba(0,0,0,.06);border-top:4px solid var(--azul);transition:transform .2s,box-shadow .2s;}
-.b-card:nth-child(2n){border-top-color:var(--verm);}
-.b-card:nth-child(3n){border-top-color:#00c96e;}
-.b-card:hover{transform:translateY(-5px);box-shadow:0 10px 32px rgba(0,0,0,.1);}
-.b-card .ic{font-size:1.7rem;margin-bottom:12px;}
-.b-card h3{font-size:.9rem;font-weight:700;color:var(--azul);margin-bottom:7px;}
-.b-card p{font-size:.83rem;color:#666;line-height:1.6;}
-.profile{background:#fff;padding:84px 24px;text-align:center;}
-.profile .sec-label{color:var(--azul);}
-.profile .sec-title{color:#0a0a2e;}
-.profile .sec-sub{color:#666;}
-.tags-wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:700px;margin:0 auto;}
-.tg{background:linear-gradient(135deg,#eef5ff,#ddeeff);border:1.5px solid #b8d8ff;color:var(--azul);padding:10px 22px;border-radius:30px;font-size:.88rem;font-weight:600;transition:all .2s;cursor:default;}
-.tg:hover{background:var(--azul);color:#fff;border-color:var(--azul);}
-.cta{background:linear-gradient(150deg,#001440,#0057B8,#0090e0);padding:96px 24px;text-align:center;position:relative;overflow:hidden;}
-.cta::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;}
-.cta .sec-label{color:rgba(255,255,255,.55);}
-.cta .sec-title{color:#fff;font-size:clamp(1.5rem,3.5vw,2.5rem);}
-.cta .sec-sub{color:rgba(255,255,255,.7);margin-bottom:0;}
-.cta-box{display:flex;gap:56px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:52px;}
-.qr-wrap{text-align:center;}
-.qr-frame{width:158px;height:158px;background:#fff;border-radius:18px;padding:11px;margin:0 auto 12px;box-shadow:0 10px 40px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;}
-.qr-frame img{width:100%;height:100%;object-fit:contain;}
-.qr-label{color:rgba(255,255,255,.5);font-size:.75rem;letter-spacing:1px;}
-.contact-block{text-align:left;}
-.c-row{display:flex;align-items:center;gap:14px;margin-bottom:18px;color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:opacity .2s;}
-.c-row:hover{opacity:.75;}
-.c-ico{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-footer{background:#000d1a;border-top:1px solid rgba(255,255,255,.06);padding:48px 24px;text-align:center;}
-.footer-logos{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:22px;}
-.footer-velox{height:38px;width:auto;filter:brightness(0) invert(1);object-fit:contain;}
-.f-sep{width:1px;height:36px;background:rgba(255,255,255,.12);}
-.footer-n2p{height:32px;width:auto;filter:brightness(0) invert(1);object-fit:contain;}
-footer p{color:rgba(255,255,255,.28);font-size:.78rem;line-height:1.9;}
-@media(max-width:640px){.hero-topbar{flex-direction:column;gap:14px;padding:16px 22px;}.topbar-sep{display:none;}.stats-inner{flex-direction:column;}.stat:not(:last-child)::after{display:none;}.stat{border-bottom:1px solid rgba(255,255,255,.1);}.cta-box{flex-direction:column;gap:36px;}.contact-block{text-align:center;}.c-row{justify-content:center;}}
+.section{padding:80px 24px;max-width:1100px;margin:0 auto;}
+.sec-title{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;color:var(--azul-esc);text-align:center;margin-bottom:12px;}
+.sec-sub{font-size:1rem;color:#555;text-align:center;max-width:600px;margin:0 auto 52px;}
+.dores-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.dor-card{background:#fff;border-radius:16px;padding:28px 24px;box-shadow:0 4px 24px rgba(0,87,184,.08);border-left:4px solid var(--verm);transition:transform .2s,box-shadow .2s;}
+.dor-card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(0,87,184,.14);}
+.dor-icon{font-size:2rem;margin-bottom:14px;}
+.dor-card h3{font-size:1rem;font-weight:700;color:var(--azul-esc);margin-bottom:8px;}
+.dor-card p{font-size:.88rem;color:#555;line-height:1.6;}
+.solucoes-bg{background:linear-gradient(135deg,#f5f9ff 0%,#e8f1ff 100%);padding:80px 24px;}
+.solucoes-inner{max-width:1100px;margin:0 auto;}
+.sol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:52px;}
+.sol-card{background:#fff;border-radius:16px;padding:28px 22px;text-align:center;box-shadow:0 4px 20px rgba(0,87,184,.07);border-top:4px solid var(--azul-neon);transition:transform .2s;}
+.sol-card:hover{transform:translateY(-4px);}
+.sol-icon{font-size:2.2rem;margin-bottom:16px;}
+.sol-card h3{font-size:.98rem;font-weight:700;color:var(--azul-esc);margin-bottom:8px;}
+.sol-card p{font-size:.85rem;color:#555;line-height:1.6;}
+.como{padding:80px 24px;max-width:1100px;margin:0 auto;}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;counter-reset:step;}
+.step{position:relative;padding:32px 24px;text-align:center;}
+.step:not(:last-child)::after{content:'→';position:absolute;right:-12px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--azul-neon);font-weight:900;}
+.step-num{width:56px;height:56px;background:linear-gradient(135deg,var(--azul),var(--azul-neon));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:#fff;margin:0 auto 16px;}
+.step h3{font-size:.92rem;font-weight:700;color:var(--azul-esc);margin-bottom:6px;}
+.step p{font-size:.82rem;color:#666;line-height:1.55;}
+.depoimentos{background:linear-gradient(90deg,var(--azul-esc),var(--azul));padding:80px 24px;}
+.dep-inner{max-width:1100px;margin:0 auto;}
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:52px;}
+.dep-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:28px 24px;backdrop-filter:blur(10px);}
+.dep-stars{color:#FFD700;font-size:1rem;margin-bottom:12px;}
+.dep-text{font-size:.9rem;color:rgba(255,255,255,.85);line-height:1.7;margin-bottom:18px;font-style:italic;}
+.dep-author{font-size:.82rem;color:#7dd8ff;font-weight:600;}
+.cta-section{background:linear-gradient(135deg,#000c20,#001f5c);padding:80px 24px;text-align:center;}
+.cta-inner{max-width:700px;margin:0 auto;}
+.cta-inner h2{font-size:clamp(1.6rem,3.5vw,2.6rem);font-weight:900;color:#fff;margin-bottom:18px;line-height:1.2;}
+.cta-inner p{font-size:1rem;color:rgba(255,255,255,.72);margin-bottom:38px;line-height:1.7;}
+.cta-btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;}
+footer{background:#000c20;padding:40px 24px;text-align:center;}
+.footer-logos{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;margin-bottom:24px;}
+.footer-logo-velox{height:40px;width:auto;filter:brightness(0) invert(1);opacity:.9;}
+.footer-sep{width:1px;height:36px;background:rgba(255,255,255,.2);}
+.footer-logo-n2p{height:32px;width:auto;filter:brightness(0) invert(1);opacity:.7;}
+.footer-info{font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.8;}
+@media(max-width:680px){
+  .hero-topbar{gap:16px;padding:10px 20px;}
+  .steps{grid-template-columns:1fr;}
+  .step:not(:last-child)::after{content:'↓';right:50%;top:auto;bottom:-14px;transform:translateX(50%);}
+}
 </style>
 </head>
 <body>
+
+<!-- HERO -->
 <section class="hero">
   <div class="hero-glow"></div>
   <div class="hero-dots"></div>
   <div class="hero-topbar">
-    <img src="LOGO VELOX 2021.jpeg" alt="velox sistemas" class="logo_velox-img"/>
+    <img src="LOGO_VELOX_2021.jpeg" alt="Velox Sistemas" class="logo_velox_img"/>
     <div class="topbar-sep"></div>
-    <img src="logo esticado.jpeg" alt="net2phone parceiro autorizado" class="logo_n2p-img"/>
+    <img src="logo_esticado.jpeg" alt="Net2Phone Agente Autorizado" class="logo_n2p_img"/>
   </div>
-  <span class="hero-chip">✦ pabx em nuvem · telefonia corporativa</span>
-  <h1>sua empresa ainda paga caro<br/>por uma telefonia que <em>não entrega</em><br/><span class="dest">resultado?</span></h1>
-  <p class="hero-sub">a modernização da comunicação corporativa pode reduzir custos em até <strong>60%</strong> e aumentar a produtividade da sua equipe — sem nenhum custo de implantação.</p>
+  <div class="hero-chip">+ pabx em nuvem · telefonia corporativa</div>
+  <h1>sua empresa ainda paga caro<br>por uma telefonia que <em>não</em><br><span class="dest">entrega resultado?</span></h1>
+  <p class="hero-sub">a <strong>velox sistemas</strong> transforma a comunicação da sua empresa com pabx em nuvem — <strong>redução de custo, mobilidade total e escalabilidade</strong> para crescer sem limite.</p>
   <div class="hero-btns">
-    <a href="https://wa.me/5519953271980" class="btn-wa">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      falar com especialista
-    </a>
-    <a href="mailto:agente@pjnet2phone.com.br" class="btn-email">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      enviar e-mail
-    </a>
+    <a href="https://wa.me/5519953271980" class="btn-wa" target="_blank">&#128172; falar pelo whatsapp</a>
+    <a href="mailto:agente@pjnet2phone.com.br" class="btn-email">&#9993; enviar e-mail</a>
   </div>
 </section>
-<section class="stats">
+
+<!-- ESTATÍSTICAS -->
+<div class="stats">
   <div class="stats-inner">
-    <div class="stat"><div class="stat-num">35<span>%</span></div><div class="stat-label">de redução para quem migra do analógico</div></div>
-    <div class="stat"><div class="stat-num">60<span>%</span></div><div class="stat-label">de economia trocando digital desatualizado</div></div>
-    <div class="stat"><div class="stat-num"><span>R$</span> 0</div><div class="stat-label">zero custo de implantação e equipamentos</div></div>
-    <div class="stat"><div class="stat-num">5<span>+</span></div><div class="stat-label">ramais — atendemos a partir de 5 ramais</div></div>
+    <div class="stat"><div class="stat-num">até <span>60%</span></div><div class="stat-label">redução na conta<br>de telefonia</div></div>
+    <div class="stat"><div class="stat-num"><span>100%</span></div><div class="stat-label">em nuvem —<br>sem hardware</div></div>
+    <div class="stat"><div class="stat-num"><span>24h</span></div><div class="stat-label">suporte técnico<br>especializado</div></div>
+    <div class="stat"><div class="stat-num"><span>+5</span></div><div class="stat-label">ramais — escala<br>conforme cresce</div></div>
+  </div>
+</div>
+
+<!-- DORES -->
+<section class="section">
+  <h2 class="sec-title">você reconhece esses problemas?</h2>
+  <p class="sec-sub">são as dores mais comuns que encontramos nas empresas antes de implantar o pabx em nuvem</p>
+  <div class="dores-grid">
+    <div class="dor-card"><div class="dor-icon">💸</div><h3>conta de telefone alta demais</h3><p>tarifas abusivas em ligações locais, ddd e fixo–móvel que consomem o orçamento sem justificativa.</p></div>
+    <div class="dor-card"><div class="dor-icon">📵</div><h3>equipe sem mobilidade</h3><p>colaboradores presos ao ramal físico, sem conseguir atender ou ligar de fora do escritório.</p></div>
+    <div class="dor-card"><div class="dor-icon">🔧</div><h3>infraestrutura cara e frágil</h3><p>pabx físico com manutenção constante, peças caras e risco de parada total do sistema.</p></div>
+    <div class="dor-card"><div class="dor-icon">📉</div><h3>sem visibilidade das chamadas</h3><p>impossível medir tempo de atendimento, ligações perdidas ou produtividade da equipe.</p></div>
+    <div class="dor-card"><div class="dor-icon">🚫</div><h3>dificuldade para crescer</h3><p>adicionar ramais exige obras, técnicos e equipamentos — processo lento e custoso.</p></div>
+    <div class="dor-card"><div class="dor-icon">🔇</div><h3>qualidade de voz ruim</h3><p>chamadas cortando, eco e instabilidade que prejudicam a imagem da empresa com o cliente.</p></div>
   </div>
 </section>
-<section class="zero">
-  <span class="sec-label">transparência total</span>
-  <span class="zero-pill">✦ implantação 100% sem custo</span>
-  <h2 class="sec-title">migrar para o pabx em nuvem é mais <em>simples e acessível</em> do que você imagina</h2>
-  <p class="sec-sub">muitas empresas adiam a modernização por acreditar que existe um alto custo de projeto. a realidade é completamente diferente.</p>
-  <div class="zero-cards">
-    <div class="zero-card c1"><div class="z-icon a1">📦</div><h3>equipamentos sem custo</h3><p>os aparelhos são configurados, testados e enviados para sua empresa sem nenhuma cobrança adicional — prontos para usar no primeiro dia.</p></div>
-    <div class="zero-card c2"><div class="z-icon a2">⚙️</div><h3>configuração incluída</h3><p>toda a configuração do sistema, alinhamento dos ramais, rotas e funcionalidades fazem parte padrão do projeto. sem taxa de ativação ou setup.</p></div>
-    <div class="zero-card c3"><div class="z-icon a3">🎯</div><h3>projeto sob medida</h3><p>cada proposta é personalizada conforme as dores e objetivos da sua empresa — visão de curto, médio e longo prazo com foco em resultado real.</p></div>
-  </div>
-</section>
-<section class="benefits">
-  <span class="sec-label">o que muda na prática</span>
-  <h2 class="sec-title">comunicação que gera resultado, reduz custo e aumenta faturamento</h2>
-  <p class="sec-sub" style="margin-bottom:48px;">muito além de uma troca de telefone — uma transformação real na forma como sua empresa opera e atende.</p>
-  <div class="bene-grid">
-    <div class="b-card"><div class="ic">📉</div><h3>redução de custos real</h3><p>elimine gastos com infraestrutura física, manutenção e linhas ociosas. pague apenas pelo que usa.</p></div>
-    <div class="b-card"><div class="ic">📱</div><h3>mobilidade total</h3><p>sua equipe atende e faz chamadas de qualquer lugar pelo celular, com o número fixo da empresa.</p></div>
-    <div class="b-card"><div class="ic">🔗</div><h3>integração com crm e erp</h3><p>conecte a telefonia ao seu sistema de gestão e ganhe agilidade com atendimento rastreável.</p></div>
-    <div class="b-card"><div class="ic">📈</div><h3>escalabilidade</h3><p>adicione ou remova ramais em minutos, sem obras ou técnicos no local. cresça sem burocracia.</p></div>
-    <div class="b-card"><div class="ic">🎙️</div><h3>ura 100% com voz humana</h3><p>atendimento automático com experiência profissional e voz natural — sem aspecto robótico ou de ia.</p></div>
-    <div class="b-card"><div class="ic">🔒</div><h3>segurança e continuidade</h3><p>solução em nuvem com alta disponibilidade, backups automáticos e suporte especializado.</p></div>
-  </div>
-</section>
-<section class="profile">
-  <span class="sec-label">para quem é esta solução</span>
-  <h2 class="sec-title">atendemos empresas a partir de 5 ramais com foco em eficiência e resultado</h2>
-  <p class="sec-sub" style="margin-bottom:40px;color:#666;">independente do tamanho, se o objetivo é reduzir custo e modernizar a comunicação, a velox tem a solução certa.</p>
-  <div class="tags-wrap">
-    <span class="tg">a partir de 5 ramais</span>
-    <span class="tg">equipes em múltiplos locais</span>
-    <span class="tg">times comerciais ativos</span>
-    <span class="tg">operações híbridas ou remotas</span>
-    <span class="tg">empresas em crescimento</span>
-    <span class="tg">migração do analógico</span>
-    <span class="tg">troca de sistema desatualizado</span>
-    <span class="tg">foco em redução de custo</span>
-  </div>
-</section>
-<section class="cta">
-  <span class="sec-label">próximo passo</span>
-  <h2 class="sec-title">pronto para reduzir custos e modernizar a comunicação da sua empresa?</h2>
-  <p class="sec-sub">fale agora com um especialista velox e descubra quanto sua empresa pode economizar.</p>
-  <div class="cta-box">
-    <div class="qr-wrap">
-      <div class="qr-frame">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=136x136&data=https://wa.me/5519953271980" alt="qr code whatsapp"/>
-      </div>
-      <p class="qr-label">aponte a câmera e fale agora</p>
+
+<!-- SOLUÇÕES -->
+<div class="solucoes-bg">
+  <div class="solucoes-inner">
+    <h2 class="sec-title">o que a velox entrega para você</h2>
+    <p class="sec-sub">tecnologia net2phone com suporte e implantação pela velox sistemas</p>
+    <div class="sol-grid">
+      <div class="sol-card"><div class="sol-icon">☁️</div><h3>pabx 100% em nuvem</h3><p>sem equipamento local, sem obra — ativo em horas com ramais ilimitados.</p></div>
+      <div class="sol-card"><div class="sol-icon">📱</div><h3>ramal no celular</h3><p>app gratuito para android e ios — equipe conectada em qualquer lugar.</p></div>
+      <div class="sol-card"><div class="sol-icon">📊</div><h3>relatórios em tempo real</h3><p>monitoramento completo de chamadas, filas e produtividade do time.</p></div>
+      <div class="sol-card"><div class="sol-icon">🤖</div><h3>ura humanizada</h3><p>atendimento automático com fluxo inteligente — sem voz robótica.</p></div>
+      <div class="sol-card"><div class="sol-icon">🔗</div><h3>integração com crm</h3><p>conecta com os principais sistemas de gestão e atendimento do mercado.</p></div>
+      <div class="sol-card"><div class="sol-icon">💰</div><h3>redução de custo garantida</h3><p>propostas personalizadas com análise da sua conta atual e projeção de economia.</p></div>
     </div>
-    <div class="contact-block">
-      <a href="https://wa.me/5519953271980" class="c-row">
-        <div class="c-ico"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
-        (19) 95327-1980 — whatsapp
-      </a>
-      <a href="mailto:agente@pjnet2phone.com.br" class="c-row">
-        <div class="c-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-        agente@pjnet2phone.com.br
-      </a>
+  </div>
+</div>
+
+<!-- COMO FUNCIONA -->
+<section class="como">
+  <h2 class="sec-title">como funciona a implantação</h2>
+  <p class="sec-sub">processo simples, rápido e sem impacto na operação</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>diagnóstico</h3><p>analisamos sua estrutura atual, custos e necessidades.</p></div>
+    <div class="step"><div class="step-num">2</div><h3>proposta</h3><p>apresentamos solução sob medida com projeção de economia.</p></div>
+    <div class="step"><div class="step-num">3</div><h3>ativação</h3><p>implantamos em até 48h sem parar sua operação.</p></div>
+    <div class="step"><div class="step-num">4</div><h3>treinamento</h3><p>capacitamos toda a equipe para usar o sistema.</p></div>
+    <div class="step"><div class="step-num">5</div><h3>suporte</h3><p>acompanhamento contínuo para garantir o melhor desempenho.</p></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos">
+  <div class="dep-inner">
+    <h2 class="sec-title" style="color:#fff;">o que nossos clientes dizem</h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,.6);">empresas que transformaram sua telefonia com a velox</p>
+    <div class="dep-grid">
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-text">"reduzimos em 52% o custo de telefonia e a equipe de campo agora atende pelo celular como se estivesse no escritório."</p><div class="dep-author">— diretor comercial, distribuidora logística</div></div>
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-text">"a implantação foi feita em um dia. o suporte da velox é ágil e a qualidade das ligações melhorou muito."</p><div class="dep-author">— gerente de ti, clínica médica</div></div>
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-text">"conseguimos crescer de 8 para 35 ramais sem nenhuma obra. era impossível com o sistema antigo."</p><div class="dep-author">— sócio, escritório de advocacia</div></div>
     </div>
   </div>
 </section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>pronto para reduzir custos e aumentar a produtividade?</h2>
+    <p>fale agora com um especialista da velox e receba uma análise gratuita da sua telefonia atual com projeção de economia.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/5519953271980" class="btn-wa" target="_blank">&#128172; quero minha análise gratuita</a>
+      <a href="mailto:agente@pjnet2phone.com.br" class="btn-email">&#9993; agente@pjnet2phone.com.br</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <div class="footer-logos">
-    <img src="LOGO VELOX 2021.jpeg" alt="velox" class="footer-velox"/>
-    <div class="f-sep"></div>
-    <img src="logo esticado.jpeg" alt="net2phone parceiro autorizado" class="footer-n2p"/>
+    <img src="LOGO_VELOX_2021.jpeg" alt="Velox Sistemas" class="footer-logo-velox"/>
+    <div class="footer-sep"></div>
+    <img src="logo_esticado.jpeg" alt="Net2Phone" class="footer-logo-n2p"/>
   </div>
-  <p>velox sistemas de comunicação integrada<br/>cnpj 25.199.695/0001-03<br/>comunicação corporativa · pabx em nuvem · soluções integradas · estado de são paulo</p>
+  <div class="footer-info">
+    velox sistemas de comunicação integrada &nbsp;|&nbsp; cnpj 25.199.695/0001-03<br>
+    agente autorizado net2phone &nbsp;|&nbsp; agente@pjnet2phone.com.br &nbsp;|&nbsp; (19) 99532-7198
+  </div>
 </footer>
+
 </body>
 </html>
